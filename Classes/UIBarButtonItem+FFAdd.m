@@ -8,6 +8,7 @@
 
 #import "UIBarButtonItem+FFAdd.h"
 #import <objc/runtime.h>
+#import "UIView+FFAdd.h"
 
 static const int block_key;
 
@@ -55,8 +56,8 @@ static const int block_key;
     [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:hightLightedImage] forState:UIControlStateHighlighted];
     //    button.xf_size = button.currentImage.size;
-    button.width = 50;
-    button.height = 44;
+    button.FF_Width = 50;
+    button.FF_Height = 44;
     [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 40)];
     
     //监听点击

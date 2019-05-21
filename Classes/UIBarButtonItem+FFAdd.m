@@ -49,4 +49,19 @@ static const int block_key;
     _YYUIBarButtonItemBlockTarget *target = objc_getAssociatedObject(self, &block_key);
     return target.block;
 }
++ (UIBarButtonItem *) itemWithTarget:(id) target action:(SEL)action image:(NSString *)image hightLightedImage:(NSString *)hightLightedImage
+{
+    UIButton *button = [[UIButton alloc] init];
+    [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:hightLightedImage] forState:UIControlStateHighlighted];
+    //    button.xf_size = button.currentImage.size;
+    button.width = 50;
+    button.height = 44;
+    [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 40)];
+    
+    //监听点击
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
 @end

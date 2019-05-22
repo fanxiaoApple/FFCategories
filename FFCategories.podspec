@@ -8,21 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFCategories'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FFCategories.'
+  s.version          = '0.0.5'
+  s.summary          = '一些常用的类扩展'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '一些常用的类扩展...'
 
   s.homepage         = 'https://github.com/fanxiaoApple/FFCategories'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'fanxiaoApple' => 'XF_MBP@qq.com' }
   s.source           = { :git => 'https://github.com/fanxiaoApple/FFCategories.git', :tag => s.version.to_s }
@@ -32,11 +23,4 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'FFCategories/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'FFCategories' => ['FFCategories/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

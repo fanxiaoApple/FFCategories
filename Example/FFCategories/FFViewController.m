@@ -7,6 +7,7 @@
 //
 
 #import "FFViewController.h"
+#import "FFCategories.h"
 
 @interface FFViewController ()
 
@@ -17,13 +18,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 100, 100)];
+    imgV.backgroundColor = [UIColor redColor];
+    imgV.image = [[UIImage imageNamed:@"IMG_0089"] imageAddCornerWithRadius:10 andSize:CGSizeMake(100, 100)];
+    [self.view addSubview:imgV];
+    
+    UIImageView *imgV2 = [[UIImageView alloc] initWithFrame:CGRectMake(250, 50, 100, 100)];
+    imgV2.backgroundColor = [UIColor redColor];
+    imgV2.image = [UIImage imageNamed:@"IMG_0089"];
+    imgV2.layer.cornerRadius = 10;
+    imgV2.layer.masksToBounds = YES;
+    [self.view addSubview:imgV2];
 }
 
 @end

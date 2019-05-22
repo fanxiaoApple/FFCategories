@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (FFAdd)
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size ;
+
+//剪裁圆角图片
+- (UIImage *)imageAddCornerWithRadius:(CGFloat)radius andSize:(CGSize)size;
 @end
 
 NS_ASSUME_NONNULL_END

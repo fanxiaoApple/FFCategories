@@ -30,6 +30,8 @@
     imgV2.layer.cornerRadius = 10;
     imgV2.layer.masksToBounds = YES;
     [self.view addSubview:imgV2];
+    
+    NSLog(@"%@",[@{@"a":@"111",@"b":@"222"} ff_JSONString]);
 }
 
 @end

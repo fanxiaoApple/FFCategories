@@ -1,6 +1,0 @@
-framework module FFCategories {
-  umbrella header "FFCategories-umbrella.h"
-
-  export *
-  module * { export * }
-}

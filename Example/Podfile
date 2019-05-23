@@ -1,13 +1,13 @@
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '8.0'
 
 target 'FFCategories_Example' do
-  pod 'FFCategories', :path => '../'
+    pod 'FFCategories', :path => '../'
 
-  target 'FFCategories_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  target 'FFCategories_Tests' do
+#    inherit! :search_paths
+#
+#
+#  end
 end

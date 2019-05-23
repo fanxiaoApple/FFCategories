@@ -1,5 +1,5 @@
 PODS:
-  - FFCategories (0.0.5)
+  - FFCategories (0.0.6)
 
 DEPENDENCIES:
   - FFCategories (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FFCategories: 50377f7040244fa17c0eed82bdca2399539b0156
+  FFCategories: e46049bc09ab0b3d1067d521cc57128b2df440b2
 
-PODFILE CHECKSUM: 2ad30293c44ed431b09513632f67849d41330b86
+PODFILE CHECKSUM: 34e232866e4bbc6cdd87a088dee27ef9b09df160
 
 COCOAPODS: 1.5.3

@@ -8,3 +8,4 @@
 #import "UIBarButtonItem+FFAdd.h"
 #import "UIColor+FFAdd.h"
 #import "UIImage+FFAdd.h"
+#import "NSDictionary+FFAdd.h"

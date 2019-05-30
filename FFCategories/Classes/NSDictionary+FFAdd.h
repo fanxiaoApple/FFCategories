@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDictionary (FFAdd)
 - (NSString *)ff_JSONString;
++ (NSDictionary *)ff_dictionaryWithJSONString:(NSString *)jsonString;
 @end
 
 NS_ASSUME_NONNULL_END

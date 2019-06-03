@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFCategories'
-  s.version          = '0.0.9'
+  s.version          = '0.1.0'
   s.summary          = '一些常用的类扩展'
 
   s.description      = '一些常用的类扩展...'
